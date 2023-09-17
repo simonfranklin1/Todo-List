@@ -32,7 +32,7 @@ O usuário deve ser capaz de:
 
 ### Links
 
-- Live Site URL: []()
+- Live Site URL: [](https://simonfranklin1.github.io/Todo-List/)
 
 ## Meu processo
 
