@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+    height: 100vh;
+    width: 100vw;
+    font-family: Helvetica;
+    overflow: hidden;
+}
+
+main {
+    background-color: rgb(41, 41, 41);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: .5rem;
+    overflow: hidden;
+    transition: .4s;
+}
+
+header {
+    color: rgb(255, 98, 41);
+    text-align: center;
+    border-bottom: 1px solid #ffffff3a;
+    padding: 1rem;
+}
+
+#todo-form, #todo-edit {
+    padding: 1rem;
+    border-bottom: 1px solid #ffffff3a;
+}
+
+#todo-form button > i,
+#todo-edit button > i {
+    pointer-events: none;
+}
+
+#todo-form p {
+    color: #fff;
+    margin-bottom: .5rem;
+}
+
+.form-control {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-control input {
+    background: rgb(41, 41, 41);
+    border: 2px solid rgb(255, 98, 41); 
+    border-radius: 5px; 
+    padding: 0.5rem; 
+    color: #fff;
+}
+
+.form-control input:focus {
+    outline: none;
+    background: none;
+}
+
+.form-control button {
+    color: rgb(255, 98, 41);
+    border: 2px solid rgb(255, 98, 41);
+    padding: .5rem;
+    cursor: pointer;
+    transition: .4s;
+    background: rgb(41, 41, 41);
+}
+
+.form-control button:hover {
+    color: #fff;
+    background-color: rgb(255, 98, 41); 
+    border-color: #fff;  
+}
+
+#cancel-edit, #cancel-todo {
+    color: rgb(255, 98, 41);
+    border: 2px solid rgb(255, 98, 41);
+    padding: .5rem;
+    cursor: pointer;
+    transition: .4s;
+    background: rgb(41, 41, 41);
+    margin-top: 10px;   
+}
+
+#cancel-edit:hover,
+#cancel-todo:hover {
+    color: #fff;
+    background-color: rgb(255, 98, 41); 
+    border-color: #fff;     
+}
+
+#todo-edit p {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+#todo-toolbar {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    border-bottom: 1px solid #ffffff3a;
+}
+
+#todo-toolbar p {
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+#search {
+    border-right: 1px solid #ffffff3a;
+    padding-right: 1rem;
+}
+
+#search input {
+    width: 100%;
+}
+
+#filter-todo {
+    padding-left: 1rem;
+}
+
+#filter {
+    background: none;
+    border: 1px solid rgb(255, 98, 41);
+    padding: .5rem;
+    color: rgb(255, 98, 41);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#filter option {
+    background-color: rgb(41, 41, 41);  
+}
+
+#filter:focus {
+    outline: none;
+}
+
+.hide {
+    display: none;
+}
+
+#todo-list {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 60%;
+}
+
+#todo-list::-webkit-scrollbar {
+    width: 15px;
+}
+
+#todo-list::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 98, 41);
+    border-radius: 20px;
+
+}
+
+#todo-list::-webkit-scrollbar-track {
+    background-color: rgb(41, 41, 41);
+}
+
+.todo-box {
+    display: flex;
+    padding: 1rem; 
+    align-items: center;
+    color: #fff;
+    border-bottom: 1px solid #ffffff3a;
+    transition: .2s;
+}
+
+.todo-box:hover {
+    margin-bottom: 3px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+
+.todo-box button {
+    color: rgb(255, 98, 41);
+    border: 2px solid rgb(255, 98, 41);
+    background: rgb(41, 41, 41);
+    margin-left: .5rem;
+    cursor: pointer;
+    transition: .4s ease;
+    width: 35px;
+    height: 35px;
+}
+
+.todo-box button i {
+    pointer-events: none;
+}
+
+.todo-box button:hover {
+    color: #fff;
+    background-color: rgb(255, 98, 41);
+    border-color: #fff; 
+}
+
+.todo-box h3 {
+    flex: 1;
+}
+
+.done {
+    background-color: rgba(255, 98, 41, 0.438);
+    text-decoration: line-through;
+    color: #fff;
+}
+
+#open-todo-btn {
+    position: fixed;
+    top: 85%;
+    right: 5%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    color: #fff;
+    background-color: rgb(255, 98, 41);
+    border-radius: 50%;
+    transition: .4s;
+    cursor: pointer;
+}
+
+#open-todo-btn:hover {
+    scale: 1.1;
+    background: linear-gradient(to right, rgb(228, 61, 0), rgb(255, 96, 38));
+}
+
+footer {
+    text-align: center;
+    margin-top: 6%;
+    color: #fff;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(255, 98, 41);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (min-width: 450px) {
+    main {
+        width: 400px;
+        height: 600px;
+        border-radius: 10px;
+    }   
+}
