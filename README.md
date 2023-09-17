@@ -27,8 +27,8 @@ O usuário deve ser capaz de:
 
 ### Screenshot
 
-![](images/mobile-screenshot.jpg)
-![](images/desktop-screenshot.jpg)
+![](images/mobile-screenshot.png)
+![](images/desktop-screenshot.png)
 
 ### Links
 
