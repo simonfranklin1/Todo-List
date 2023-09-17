@@ -32,7 +32,7 @@ O usuário deve ser capaz de:
 
 ### Links
 
-- Live Site URL: [Todo List](#https://simonfranklin1.github.io/Todo-List/)
+- Live Site URL: [Todo List](https://simonfranklin1.github.io/Todo-List/)
 
 ## Meu processo
 
@@ -44,4 +44,4 @@ O usuário deve ser capaz de:
 - Feito em Mobile-First
 
 - ### Autor
-- - Github - [@simonfranklin1](#https://github.com/simonfranklin1)
+- Github - [@simonfranklin1](https://github.com/simonfranklin1)
