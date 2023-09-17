@@ -27,12 +27,12 @@ O usuário deve ser capaz de:
 
 ### Screenshot
 
-![](./images/mobile-screenshot.jpg)
-![](./images/desktop-screenshot.jpg)
+![](images/mobile-screenshot.jpg)
+![](images/desktop-screenshot.jpg)
 
 ### Links
 
-- Live Site URL: [E-commerce product page]()
+- Live Site URL: []()
 
 ## Meu processo
 
