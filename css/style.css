@@ -16,7 +16,7 @@ main {
     background-color: rgb(41, 41, 41);
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -107,7 +107,7 @@ header {
     display: flex;
     padding: 1rem;
     align-items: center;
-    border-bottom: 1px solid #ffffff3a;
+    border-bottom: 1px solid rgb(255, 98, 41);/*#ffffff3a*/
 }
 
 #todo-toolbar p {
@@ -153,11 +153,13 @@ header {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    height: 60%;
+    height: 62%;
+    border-bottom: 1px solid rgb(255, 98, 41);
 }
 
 #todo-list::-webkit-scrollbar {
     width: 15px;
+    background-color: rgb(255, 98, 41);
 }
 
 #todo-list::-webkit-scrollbar-thumb {
@@ -239,7 +241,10 @@ header {
 
 footer {
     text-align: center;
-    margin-top: 6%;
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
     color: #fff;
 }
 
