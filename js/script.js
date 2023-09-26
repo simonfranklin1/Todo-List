@@ -20,17 +20,17 @@ function funcionalidadesFormTodo () {
     openTodoBtn.addEventListener("click", () => {
         if(todoForm.classList.contains("hide")) {
             todoForm.classList.remove("hide");
-            todoList.style.height = '38.2%';
+            todoList.style.height = '42.7%';
         } else {
             todoForm.classList.add("hide");
-            todoList.style.height = '62%';        
+            todoList.style.height = '65%';        
         }
     });
 
     document.querySelector("#cancel-todo").addEventListener("click", (e) => {
         e.preventDefault();
         todoForm.classList.add("hide");
-        todoList.style.height = "62%";
+        todoList.style.height = "65%";
     });
 };
 
